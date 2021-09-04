@@ -7,7 +7,6 @@ function App() {
   var table = document.getElementById("table");
   var sumValue = 0;
   var totalVal = 0;
-  var total = 0;
 
   const [data, setData] = useState(Table_data);
 
@@ -68,7 +67,7 @@ function App() {
 
         <Address />
 
-        <table class="table border" id="table">
+        <table className="table border" id="table">
           <thead>
             <tr>
               <th scope="col">#</th>
@@ -135,31 +134,31 @@ function App() {
           <div className="row">
             <div className="col-9"></div>
             <div className="col-3">
-              <div class="col-md-12">
-                <label for="validationCustom03 my-2" class="form-label me-5">
+              <div className="col-md-12">
+                <label for="validationCustom03 my-2" className="form-label me-5">
                   Sub Total
                 </label>
-                <p class="form-control1 sub my-2" id="sub"></p>
+                <p className="form-control1 sub my-2" id="sub"></p>
               </div>
 
-              <div class="col-md-12">
-                <label for="validationCustom03" class="form-label me-5">
+              <div className="col-md-12">
+                <label for="validationCustom03" className="form-label me-5">
                   Tax (in %)
                 </label>
                 <input
                   type="number"
                   name="tax"
-                  class="form-control1 w-50"
+                  className="form-control1 w-50"
                   onChange={handleAddDataChange}
                   required
                 />
               </div>
 
-              <div class="col-md-12">
-                <label for="validationCustom03 my-2" class="form-label me-5">
+              <div className="col-md-12">
+                <label for="validationCustom03 my-2" className="form-label me-5">
                   Total
                 </label>
-                <p class="form-control1 my-2 ms-5" id="taxVal"></p>
+                <p className="form-control1 my-2 ms-5" id="taxVal"></p>
               </div>
             </div>
           </div>
